@@ -29,6 +29,23 @@ const LogoSvg = () => (
   </svg>
 );
 
+const Logo = () => {
+  const [hasError, setHasError] = useState(false);
+  
+  if (hasError || !ASSETS.logo) {
+    return <LogoSvg />;
+  }
+  
+  return (
+    <img 
+      src={ASSETS.logo} 
+      alt="Synovatech Logo" 
+      className="w-full h-full object-cover" 
+      onError={() => setHasError(true)} 
+    />
+  );
+};
+
 export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState<ServiceDetail | null>(null);
@@ -50,7 +67,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden shrink-0">
-               <LogoSvg />
+               <Logo />
             </div>
             <span className="heading-display font-extrabold text-2xl tracking-tight text-brand-blue">SYNOVA<span className="text-brand-accent">TECH</span></span>
           </div>
@@ -72,7 +89,7 @@ export default function App() {
       <header className="md:hidden flex items-center justify-between px-6 py-4 bg-white fixed top-0 w-full z-40 border-b border-slate-200 shadow-sm">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg overflow-hidden shrink-0">
-               <LogoSvg />
+               <Logo />
             </div>
             <span className="heading-display font-extrabold text-lg text-brand-blue tracking-tight">SYNOVA<span className="text-brand-accent">TECH</span></span>
           </div>
@@ -113,7 +130,7 @@ export default function App() {
             {/* Top mobile logo only shown if no sticky nav yet */}
             <div className="hidden md:flex items-center gap-3 mb-10">
               <div className="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden shadow-sm shrink-0">
-                <LogoSvg />
+                <Logo />
               </div>
               <span className="heading-display font-extrabold text-2xl tracking-tighter text-brand-blue">SYNOVA<span className="text-brand-accent">TECH</span></span>
             </div>
@@ -160,7 +177,7 @@ export default function App() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center shrink-0">
-                 <LogoSvg />
+                 <Logo />
               </div>
               <span className="heading-display font-extrabold text-2xl tracking-tighter text-slate-900">SYNOVA<span className="text-brand-accent">TECH</span></span>
             </div>
