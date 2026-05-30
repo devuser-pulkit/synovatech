@@ -15,7 +15,6 @@ export const SERVICE_ITEMS: ServiceDetail[] = [
       'High-Definition AI-powered analytics (Face & License Plate Recognition)',
       '24/7 Cloud-connected monitoring and real-time mobile alerts',
       'Tamper-proof hardware designed for Indian weather conditions',
-      'Tamper-proof hardware designed for Indian weather conditions',
       'Plants perimeter CCTV & Sensers security solution',
       'Plant gate automation solution - VAV, Bolard, Pipord',
       'Building Access Solution - Face Reader, Card Reader, Biometric Reader',
@@ -65,7 +64,7 @@ export const SERVICE_ITEMS: ServiceDetail[] = [
     icon: Code,
     image: ASSETS.services.software,
     benefits: [
-      'Static and dynamic web site development with React, Next.js, and Node.js',
+      'Software design and development for complex enterprise needs',
       'Custom ERP & CRM integrations tailored to your business logic',
       'Highly scalable cloud architectures (AWS, Azure, GCP)',
       'Localized data compliances ensuring absolute security'
