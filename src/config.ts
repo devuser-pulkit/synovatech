@@ -11,6 +11,6 @@ export const ASSETS = {
 
 export const CONTACT_INFO = {
   email: "contact@synovatech.in",
-  phone: "+91 7091270284",
+  phone: "+91 8986731088",
   address: "Richmond Pride, Electronic City, Bengaluru KA-560105"
 };
