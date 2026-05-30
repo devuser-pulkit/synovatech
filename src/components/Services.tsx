@@ -14,7 +14,12 @@ export const SERVICE_ITEMS: ServiceDetail[] = [
     benefits: [
       'High-Definition AI-powered analytics (Face & License Plate Recognition)',
       '24/7 Cloud-connected monitoring and real-time mobile alerts',
-      'Tamper-proof hardware designed for Indian weather conditions'
+      'Tamper-proof hardware designed for Indian weather conditions',
+      'Tamper-proof hardware designed for Indian weather conditions',
+      'Plants perimeter CCTV & Sensers security solution',
+      'Plant gate automation solution - VAV, Bolard, Pipord',
+      'Building Access Solution - Face Reader, Card Reader, Biometric Reader',
+      'Command and Control Design'
     ],
     caseStudy: {
       title: 'Securing a 20-Acre Logistics Hub in Mumbai',
@@ -37,7 +42,9 @@ export const SERVICE_ITEMS: ServiceDetail[] = [
     benefits: [
       'Pre-vetted technical and facility management staff',
       'Rapid deployment capabilities within 48 to 72 hours',
-      'Strict adherence to Indian labor compliance and payroll'
+      'Strict adherence to Indian labor compliance and payroll',
+      'Supply main power - labour, supervisor, manager, security guard, housekeeping, etc.'
+
     ],
     caseStudy: {
       title: 'Scaling Operations for a Delhi-NCR Tech Park',
@@ -58,6 +65,7 @@ export const SERVICE_ITEMS: ServiceDetail[] = [
     icon: Code,
     image: ASSETS.services.software,
     benefits: [
+      'Static and dynamic web site development with React, Next.js, and Node.js',
       'Custom ERP & CRM integrations tailored to your business logic',
       'Highly scalable cloud architectures (AWS, Azure, GCP)',
       'Localized data compliances ensuring absolute security'
